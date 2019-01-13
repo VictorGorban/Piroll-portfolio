@@ -1,0 +1,206 @@
+.footer {
+  background-color: #141414;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+
+
+  .container {
+    margin: 100px 7.1% 9.6%;
+    width: 84.3%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    @media (max-width: 1023.9px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // Не. Все эти внутренние флексы нужно делеать отступами.
+    // Здесь не предполагается выравнивание, я его придумал.
+    // Ну ладно, зато потестил возможности.
+    // Но Флекс для выравнивания, (и для того чтобы сделать перенос)
+    // и все.
+    // Вот тут, и для менюшки, понадобятся @media.
+
+    // Хотя nav стоит оставить... и блок links сделать надо, нормально будет
+    // 60 на 40 эти два блока сделаю
+
+    .company {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+      width: 55%;
+      min-width: 500px;
+      max-width: 700px;
+      margin-right: 50px;
+
+      @media (max-width: 1023.9px) {
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+        margin-right: 0;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .rights {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+
+        .title {
+          font-family: Montserrat;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0.18px;
+          margin-bottom: 20px;
+          @media (max-width: 768px) {
+            font-size: 1.4rem;
+          }
+          @media (max-width: 600px) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .text {
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px;
+          @media (max-width: 768px) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        color: #bcbcbc;
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+        @media (max-width: 600px) {
+          margin-top: 20px;
+        }
+
+        .email {
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 0.07px;
+          @media (max-width: 768px) {
+            font-size: 1.2rem;
+          }
+
+        }
+
+        .phone {
+          font-family: "Work Sans";
+          font-weight: 400;
+          letter-spacing: 0.07px;
+          @media (max-width: 768px) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+      width: 32%;
+      min-width: 335px;
+      max-width: 400px;
+
+      @media (max-width: 1023.9px) {
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+        margin-top: 30px;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 50px;
+        align-items: center;
+      }
+
+      .footer-nav {
+        display: flex;
+        width: 170px;
+        @media (max-width: 768px) {
+          width: 200px;
+        }
+
+        //flex-direction: column;
+        justify-content: space-between;
+        @media (max-width: 600px) {
+          margin-bottom: 30px;
+        }
+        &__list {
+          margin: 0;
+          padding: 0;
+          display: block;
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px;
+          @media (max-width: 768px) {
+            font-size: 1.2rem;
+          }
+
+          &-item {
+            display: block;
+          }
+        }
+      }
+
+      .social-links {
+        margin: 0;
+        padding: 0;
+
+        width: 75px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        color: #bcbcbc;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.07px;
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+        &-item {
+          display: block;
+        }
+      }
+
+    }
+  }
+}

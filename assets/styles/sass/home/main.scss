@@ -1,0 +1,125 @@
+@import "../footer";
+@import "../nav";
+@import "../main";
+
+
+
+.header {
+  background-color: #f6f6f6;
+  width: 100%;
+  background-image: url(../../../img/header-about-me.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 313px;
+
+  .wrapper {
+    text-align: center;
+    width: 512px;
+
+    .title {
+      color: #171717;
+      font-family: Montserrat, serif;
+      font-size: 38px;
+      font-weight: 600;
+      //line-height: 84px;
+      letter-spacing: 0.38px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #787878;
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.09px;
+    }
+  }
+}
+
+@mixin aspect-ratio($width-ratio, $height-ratio) {
+  position: relative; // для того, чтобы child's position: absolute считал свои координаты от левого верхнего угла этого блока.
+
+  &::before { // before - псевдоэлемент, который ведет себя как первый ребенок.
+    display: block;
+    content: '';
+    width: 100%; // 100% ширины родителя, т.е. блока, для которого этот - :before.
+
+    // % of width. In my case, it will be 133.3333 %.
+    padding-top: ($height-ratio / $width-ratio) * 100%; // создаем "высоту" через % от ширины.
+  }
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f6f6;
+
+  .image-wrapper {
+    position: relative;
+    width: 25%;
+
+    @include aspect-ratio(340, 300);
+
+    @media (max-width: 1023.9px) {
+      width: 33.3333%;
+    }
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+
+    @media (max-width: 599px) {
+      width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 25%;
+    }
+  }
+
+  .image {
+    display: block;
+    position: absolute; // без left и т.п. остается на месте, но другие элементы делают вид что его нет.
+    //нда, простое правило. Используешь absolute - указывай left top и т.д. Не нужно left и т.д. только если нужно след. элемент наложить на этот.
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .link-hover {
+    //display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    // для того, чтобы before и т.д. были все по центру.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(16, 201, 195, 0.85);
+
+      &::before { // по центру текст
+        font-family: 'Pe-icon-7-stroke';
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 400;
+        content: "\e63e";
+      }
+    }
+  }
+}
+

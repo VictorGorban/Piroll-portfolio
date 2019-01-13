@@ -1,0 +1,16 @@
+@import "footer";
+@import "nav";
+
+body {
+  &::selection {
+    color: #fff;
+    background-color: #10c9c3;
+  }
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
