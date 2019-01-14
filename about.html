@@ -2,27 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>About</title>
 
-    <link rel="stylesheet" href="assets/styles/css/normalize.css">
-    <link rel="stylesheet" href="assets/styles/css/home/main.css">
+    <link href="assets/styles/css/normalize.css" rel="stylesheet">
+    <link href="assets/styles/css/home/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans|Work+Sans&amp;subset=cyrillic"
           rel="stylesheet">
 </head>
 <body class="body">
 <nav class="nav">
     <div class="nav__wrapper">
-        <img src="assets/img/logo-dark.svg" alt="logo" class="nav__logo">
+        <img alt="logo" class="nav__logo" src="assets/img/logo-dark.svg">
         <ul class="nav__list">
             <li class="nav__list-item "><a href="home.html">Home</a></li>
             <li class="nav__list-item nav__list-item_active">About</li>
             <li class="nav__list-item"><a href="contact.html">Contact</a></li>
+            <li class="nav__list-item dropdown">
+                Hey!
+                <div class="dropdown-content dropdown-content--right">
+                    <div class="nav__list-item dropdown-content-item"><a href="contact.html">Contact</a></div>
+                    <div class="nav__list-item dropdown-content-item"><a href="contact.html">Contact</a></div>
+                    <div class="nav__list-item dropdown-content-item"><a href="contact.html">Contact</a></div>
+                    <div class="nav__list-item dropdown-content-item"git ><a href="contact.html">Contact</a></div>
+                </div>
+            </li>
         </ul>
+
     </div>
 </nav>
 
 <main>
-
+    <div class="dropdown">
+        <span>Hey!</span>
+        <div class="dropdown-content dropdown-content--right">
+            <div class="nav__list-item"><a href="contact.html">Contact</a></div>
+            <div class="nav__list-item"><a href="contact.html">Contact</a></div>
+            <div class="nav__list-item"><a href="contact.html">Contact</a></div>
+            <div class="nav__list-item"><a href="contact.html">Contact</a></div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">

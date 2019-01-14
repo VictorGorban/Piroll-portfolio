@@ -1,7 +1,7 @@
 .nav {
   background-color: #fff;
   position: relative;
-  overflow: auto;
+  overflow: visible;
 
   .nav__wrapper {
     width: 86%;
@@ -69,7 +69,46 @@
       }
 
     }
+
+
   }
 
+}
 
+
+.dropdown{
+  position: relative;
+  color: inherit !important;
+  //overflow: visible;
+  &:hover{
+    .dropdown-content{
+      //display: block;
+      visibility: visible;
+    }
+  }
+
+  &-content{
+    display: block;
+    visibility: hidden;
+    z-index: 30;
+    position: absolute;
+    margin: 0;
+    width: 100px;
+    top: 100%;
+    left: 0;
+    right: auto;
+    background-color: rgba(200,200,200,0.5);
+
+    &--right{
+      //left: auto;
+      right: 0;
+    }
+
+    &-item{
+      padding: 5px;
+      color: inherit;
+
+      //border-bottom: 1px solid gray;
+    }
+  }
 }
