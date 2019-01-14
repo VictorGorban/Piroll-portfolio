@@ -1,0 +1,610 @@
+.footer {
+  background-color: #141414;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center; }
+  .footer .container {
+    margin: 100px 7.1% 9.6%;
+    width: 84.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media (max-width: 1023.9px) {
+      .footer .container {
+        flex-direction: column;
+        align-items: center; } }
+    .footer .container .company {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 55%;
+      min-width: 500px;
+      max-width: 700px;
+      margin-right: 50px; }
+      @media (max-width: 1023.9px) {
+        .footer .container .company {
+          width: 90%;
+          min-width: unset;
+          max-width: unset;
+          margin-right: 0; } }
+      @media (max-width: 768px) {
+        .footer .container .company {
+          font-size: 1.2rem; } }
+      @media (max-width: 600px) {
+        .footer .container .company {
+          flex-direction: column;
+          align-items: center;
+          text-align: center; } }
+      .footer .container .company .rights {
+        display: flex;
+        flex-direction: column;
+        width: 230px; }
+        .footer .container .company .rights .title {
+          font-family: Montserrat;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0.18px;
+          margin-bottom: 20px; }
+          @media (max-width: 768px) {
+            .footer .container .company .rights .title {
+              font-size: 1.4rem; } }
+          @media (max-width: 600px) {
+            .footer .container .company .rights .title {
+              margin-bottom: 10px; } }
+        .footer .container .company .rights .text {
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .rights .text {
+              font-size: 1.2rem; } }
+      .footer .container .company .contacts {
+        display: flex;
+        flex-direction: column;
+        color: #bcbcbc; }
+        @media (max-width: 768px) {
+          .footer .container .company .contacts {
+            font-size: 1.2rem; } }
+        @media (max-width: 600px) {
+          .footer .container .company .contacts {
+            margin-top: 20px; } }
+        .footer .container .company .contacts .email {
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .contacts .email {
+              font-size: 1.2rem; } }
+        .footer .container .company .contacts .phone {
+          font-family: "Work Sans";
+          font-weight: 400;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .contacts .phone {
+              font-size: 1.2rem; } }
+    .footer .container .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 32%;
+      min-width: 335px;
+      max-width: 400px; }
+      @media (max-width: 1023.9px) {
+        .footer .container .links {
+          width: 90%;
+          min-width: unset;
+          max-width: unset;
+          margin-top: 30px; } }
+      @media (max-width: 768px) {
+        .footer .container .links {
+          font-size: 1.2rem; } }
+      @media (max-width: 600px) {
+        .footer .container .links {
+          flex-direction: column;
+          margin-bottom: 50px;
+          align-items: center; } }
+      .footer .container .links .footer-nav {
+        display: flex;
+        width: 170px;
+        justify-content: space-between; }
+        @media (max-width: 768px) {
+          .footer .container .links .footer-nav {
+            width: 200px; } }
+        @media (max-width: 600px) {
+          .footer .container .links .footer-nav {
+            margin-bottom: 30px; } }
+        .footer .container .links .footer-nav__list {
+          margin: 0;
+          padding: 0;
+          display: block;
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .links .footer-nav__list {
+              font-size: 1.2rem; } }
+          .footer .container .links .footer-nav__list-item {
+            display: block;
+            transition: color 0.2s ease-out; }
+            .footer .container .links .footer-nav__list-item:hover {
+              color: ghostwhite; }
+      .footer .container .links .social-links {
+        margin: 0;
+        padding: 0;
+        width: 75px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: #bcbcbc;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.07px; }
+        @media (max-width: 768px) {
+          .footer .container .links .social-links {
+            font-size: 1.2rem; } }
+        .footer .container .links .social-links-item {
+          display: block;
+          transition: color 0.2s ease-out; }
+          .footer .container .links .social-links-item:hover {
+            color: ghostwhite; }
+
+.nav {
+  background-color: #fff;
+  position: relative;
+  overflow: auto; }
+  .nav .nav__wrapper {
+    width: 86%;
+    height: fit-content;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 599px) {
+      .nav .nav__wrapper {
+        flex-direction: column;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: space-around; } }
+    .nav .nav__wrapper .nav__logo {
+      width: 31px;
+      height: 25px;
+      margin-right: 100px; }
+      @media (max-width: 599px) {
+        .nav .nav__wrapper .nav__logo {
+          width: 40px;
+          height: auto;
+          object-fit: cover;
+          margin: 0; } }
+    .nav .nav__wrapper .nav__list {
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 215px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #191919;
+      letter-spacing: 1.2px; }
+      @media (max-width: 599px) {
+        .nav .nav__wrapper .nav__list {
+          font-size: 1.2em;
+          flex-flow: column nowrap; } }
+      .nav .nav__wrapper .nav__list-item {
+        display: block;
+        transition: color 0.2s ease-out; }
+        @media (max-width: 768px) {
+          .nav .nav__wrapper .nav__list-item {
+            padding-top: 10px; } }
+        .nav .nav__wrapper .nav__list-item_active {
+          color: #10c9c3; }
+        .nav .nav__wrapper .nav__list-item:active, .nav .nav__wrapper .nav__list-item:hover {
+          color: #10c9c3;
+          cursor: pointer; }
+
+.footer {
+  background-color: #141414;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center; }
+  .footer .container {
+    margin: 100px 7.1% 9.6%;
+    width: 84.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media (max-width: 1023.9px) {
+      .footer .container {
+        flex-direction: column;
+        align-items: center; } }
+    .footer .container .company {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 55%;
+      min-width: 500px;
+      max-width: 700px;
+      margin-right: 50px; }
+      @media (max-width: 1023.9px) {
+        .footer .container .company {
+          width: 90%;
+          min-width: unset;
+          max-width: unset;
+          margin-right: 0; } }
+      @media (max-width: 768px) {
+        .footer .container .company {
+          font-size: 1.2rem; } }
+      @media (max-width: 600px) {
+        .footer .container .company {
+          flex-direction: column;
+          align-items: center;
+          text-align: center; } }
+      .footer .container .company .rights {
+        display: flex;
+        flex-direction: column;
+        width: 230px; }
+        .footer .container .company .rights .title {
+          font-family: Montserrat;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0.18px;
+          margin-bottom: 20px; }
+          @media (max-width: 768px) {
+            .footer .container .company .rights .title {
+              font-size: 1.4rem; } }
+          @media (max-width: 600px) {
+            .footer .container .company .rights .title {
+              margin-bottom: 10px; } }
+        .footer .container .company .rights .text {
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .rights .text {
+              font-size: 1.2rem; } }
+      .footer .container .company .contacts {
+        display: flex;
+        flex-direction: column;
+        color: #bcbcbc; }
+        @media (max-width: 768px) {
+          .footer .container .company .contacts {
+            font-size: 1.2rem; } }
+        @media (max-width: 600px) {
+          .footer .container .company .contacts {
+            margin-top: 20px; } }
+        .footer .container .company .contacts .email {
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .contacts .email {
+              font-size: 1.2rem; } }
+        .footer .container .company .contacts .phone {
+          font-family: "Work Sans";
+          font-weight: 400;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .company .contacts .phone {
+              font-size: 1.2rem; } }
+    .footer .container .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 32%;
+      min-width: 335px;
+      max-width: 400px; }
+      @media (max-width: 1023.9px) {
+        .footer .container .links {
+          width: 90%;
+          min-width: unset;
+          max-width: unset;
+          margin-top: 30px; } }
+      @media (max-width: 768px) {
+        .footer .container .links {
+          font-size: 1.2rem; } }
+      @media (max-width: 600px) {
+        .footer .container .links {
+          flex-direction: column;
+          margin-bottom: 50px;
+          align-items: center; } }
+      .footer .container .links .footer-nav {
+        display: flex;
+        width: 170px;
+        justify-content: space-between; }
+        @media (max-width: 768px) {
+          .footer .container .links .footer-nav {
+            width: 200px; } }
+        @media (max-width: 600px) {
+          .footer .container .links .footer-nav {
+            margin-bottom: 30px; } }
+        .footer .container .links .footer-nav__list {
+          margin: 0;
+          padding: 0;
+          display: block;
+          color: #bcbcbc;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.07px; }
+          @media (max-width: 768px) {
+            .footer .container .links .footer-nav__list {
+              font-size: 1.2rem; } }
+          .footer .container .links .footer-nav__list-item {
+            display: block;
+            transition: color 0.2s ease-out; }
+            .footer .container .links .footer-nav__list-item:hover {
+              color: ghostwhite; }
+      .footer .container .links .social-links {
+        margin: 0;
+        padding: 0;
+        width: 75px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: #bcbcbc;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.07px; }
+        @media (max-width: 768px) {
+          .footer .container .links .social-links {
+            font-size: 1.2rem; } }
+        .footer .container .links .social-links-item {
+          display: block;
+          transition: color 0.2s ease-out; }
+          .footer .container .links .social-links-item:hover {
+            color: ghostwhite; }
+
+.nav {
+  background-color: #fff;
+  position: relative;
+  overflow: auto; }
+  .nav .nav__wrapper {
+    width: 86%;
+    height: fit-content;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 599px) {
+      .nav .nav__wrapper {
+        flex-direction: column;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: space-around; } }
+    .nav .nav__wrapper .nav__logo {
+      width: 31px;
+      height: 25px;
+      margin-right: 100px; }
+      @media (max-width: 599px) {
+        .nav .nav__wrapper .nav__logo {
+          width: 40px;
+          height: auto;
+          object-fit: cover;
+          margin: 0; } }
+    .nav .nav__wrapper .nav__list {
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 215px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #191919;
+      letter-spacing: 1.2px; }
+      @media (max-width: 599px) {
+        .nav .nav__wrapper .nav__list {
+          font-size: 1.2em;
+          flex-flow: column nowrap; } }
+      .nav .nav__wrapper .nav__list-item {
+        display: block;
+        transition: color 0.2s ease-out; }
+        @media (max-width: 768px) {
+          .nav .nav__wrapper .nav__list-item {
+            padding-top: 10px; } }
+        .nav .nav__wrapper .nav__list-item_active {
+          color: #10c9c3; }
+        .nav .nav__wrapper .nav__list-item:active, .nav .nav__wrapper .nav__list-item:hover {
+          color: #10c9c3;
+          cursor: pointer; }
+
+body {
+  width: 100%;
+  background-color: #f6f6f6; }
+  body::selection {
+    color: #fff;
+    background-color: #10c9c3; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.header {
+  background-color: #f6f6f6;
+  width: 100%;
+  background-image: url(../../../img/header-about-me.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px; }
+  .header .wrapper {
+    text-align: center;
+    width: 512px; }
+    .header .wrapper .title {
+      color: white;
+      font-family: Montserrat, serif;
+      font-size: 38px;
+      font-weight: 600;
+      letter-spacing: 0.38px;
+      margin-bottom: 20px; }
+    .header .wrapper .text {
+      color: white;
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.09px; }
+
+.block-stars {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #10c9c3; }
+  @media (max-width: 600px) {
+    .block-stars {
+      padding: 50px 20px; } }
+  .block-stars .item {
+    width: 280px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .block-stars .item .image {
+      display: block;
+      margin-right: 25px;
+      width: 40px;
+      height: 40px;
+      font-family: 'Pe-icon-7-stroke';
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 30px; }
+    .block-stars .item .text-wrapper {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase; }
+      .block-stars .item .text-wrapper .title {
+        letter-spacing: 0.54px; }
+      .block-stars .item .text-wrapper .text {
+        letter-spacing: 0.54px; }
+  .block-stars .block-about {
+    display: flex;
+    flex-wrap: wrap; }
+
+.block-about {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .block-about .image {
+    width: 50%;
+    object-fit: cover; }
+    @media (max-width: 1280px) {
+      .block-about .image {
+        width: 75%; } }
+    @media (max-width: 768px) {
+      .block-about .image {
+        width: 100%; } }
+  .block-about .text-container-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .block-about .text-container-wrapper .text-container {
+      width: 80%;
+      color: #1d1d1d; }
+      @media (max-width: 1280px) {
+        .block-about .text-container-wrapper .text-container {
+          width: 75%; } }
+      @media (max-width: 768px) {
+        .block-about .text-container-wrapper .text-container {
+          width: 100%; } }
+      .block-about .text-container-wrapper .text-container .title {
+        font-family: Montserrat, serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 84px;
+        letter-spacing: 0.3px;
+        margin-bottom: 0; }
+      .block-about .text-container-wrapper .text-container .text {
+        color: #787878;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.08px;
+        margin-bottom: 30px; }
+
+.block-landing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: white; }
+  .block-landing .wrapper {
+    text-align: center;
+    width: 550px; }
+    .block-landing .wrapper .title {
+      color: #1d1d1d;
+      font-family: Montserrat, serif;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 84px;
+      letter-spacing: 0.3px;
+      margin-bottom: 20px; }
+    .block-landing .wrapper .text {
+      color: #787878;
+      font-family: "Nunito Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.08px; }
+    .block-landing .wrapper .button-send {
+      box-sizing: border-box;
+      border: 0;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 180px;
+      height: 54px;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      background-color: #10c9c3;
+      padding: 0;
+      transition: font-size 50ms linear; }
+      @media (max-width: 768px) {
+        .block-landing .wrapper .button-send {
+          width: 100%; } }
+      .block-landing .wrapper .button-send:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      .block-landing .wrapper .button-send:active {
+        box-shadow: none;
+        font-size: 10px; }

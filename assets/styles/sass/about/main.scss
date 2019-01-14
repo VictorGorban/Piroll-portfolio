@@ -1,0 +1,248 @@
+@import "../footer";
+@import "../nav";
+@import "../main";
+
+.header {
+  background-color: #f6f6f6;
+  width: 100%;
+  background-image: url(../../../img/header-about-me.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+
+
+  .wrapper {
+    text-align: center;
+    width: 512px;
+
+    .title {
+      color: white;
+      font-family: Montserrat, serif;
+      font-size: 38px;
+      font-weight: 600;
+      //line-height: 84px;
+      letter-spacing: 0.38px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: white;
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.09px;
+    }
+  }
+}
+
+@mixin aspect-ratio($width-ratio, $height-ratio) {
+  position: relative; // для того, чтобы child's position: absolute считал свои координаты от левого верхнего угла этого блока.
+
+  &::before { // before - псевдоэлемент, который ведет себя как первый ребенок.
+    display: block;
+    content: '';
+    width: 100%; // 100% ширины родителя, т.е. блока, для которого этот - :before.
+
+    // % of width. In my case, it will be 133.3333 %.
+    padding-top: ($height-ratio / $width-ratio) * 100%; // создаем "высоту" через % от ширины.
+  }
+}
+
+.block-stars {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #10c9c3;
+
+  @media (max-width: 600px) {
+    padding: 50px 20px;
+  }
+
+  .item {
+    width: 280px;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    .image {
+      display: block;
+      margin-right: 25px;
+      width: 40px;
+      height: 40px;
+      font-family: 'Pe-icon-7-stroke';
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    .text-wrapper {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase;
+
+      .title {
+        letter-spacing: 0.54px;
+      }
+
+      .text {
+        letter-spacing: 0.54px;
+      }
+    }
+
+
+  }
+
+  .block-about {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+
+    }
+  }
+
+}
+
+.block-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    width: 50%;
+    //height: auto;
+    object-fit: cover;
+
+    @media (max-width: 1280px) {
+      width: 75%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .text-container-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text-container {
+      width: 80%;
+      //height: auto;
+
+      @media (max-width: 1280px) {
+        width: 75%;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+        color: #1d1d1d;
+      .title {
+        font-family: Montserrat, serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 84px;
+        letter-spacing: 0.3px;
+        margin-bottom: 0;
+      }
+
+      .text {
+        color: #787878;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.08px;
+        margin-bottom: 30px;
+      }
+
+
+    }
+  }
+}
+
+.block-landing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: white;
+
+
+  .wrapper {
+    text-align: center;
+    width: 550px;
+
+    .title {
+      color: #1d1d1d;
+      font-family: Montserrat, serif;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 84px;
+      letter-spacing: 0.3px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #787878;
+      font-family: "Nunito Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.08px;
+    }
+
+    .button-send {
+      box-sizing: border-box;
+      border: 0;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      width: 180px;
+      height: 54px;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      background-color: #10c9c3;
+      padding: 0;
+
+      transition: font-size 50ms linear;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        box-shadow: none;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
