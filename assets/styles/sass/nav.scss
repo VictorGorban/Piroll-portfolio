@@ -2,6 +2,7 @@
   background-color: #fff;
   position: relative;
   overflow: auto;
+
   .nav__wrapper {
     width: 86%;
     height: fit-content;
@@ -50,10 +51,13 @@
 
       &-item {
         display: block;
+        transition: color 0.2s ease-out;
+
         @media (max-width: 768px) {
           padding-top: 10px;
 
         }
+
         &_active {
           color: #10c9c3;
         }

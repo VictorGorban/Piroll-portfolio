@@ -44,7 +44,8 @@
           font-size: 1.2em;
           flex-flow: column nowrap; } }
       .nav .nav__wrapper .nav__list-item {
-        display: block; }
+        display: block;
+        transition: color 0.2s ease-out; }
         @media (max-width: 768px) {
           .nav .nav__wrapper .nav__list-item {
             padding-top: 10px; } }

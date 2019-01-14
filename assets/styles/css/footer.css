@@ -134,7 +134,10 @@
             .footer .container .links .footer-nav__list {
               font-size: 1.2rem; } }
           .footer .container .links .footer-nav__list-item {
-            display: block; }
+            display: block;
+            transition: color 0.2s ease-out; }
+            .footer .container .links .footer-nav__list-item:hover {
+              color: ghostwhite; }
       .footer .container .links .social-links {
         margin: 0;
         padding: 0;
@@ -152,4 +155,7 @@
           .footer .container .links .social-links {
             font-size: 1.2rem; } }
         .footer .container .links .social-links-item {
-          display: block; }
+          display: block;
+          transition: color 0.2s ease-out; }
+          .footer .container .links .social-links-item:hover {
+            color: ghostwhite; }

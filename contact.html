@@ -2,45 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact</title>
+    <link href="assets/img/favicon.png" rel="icon" type="image/png">
 
-    <link rel="stylesheet" href="assets/libs/icon-font-7-stroke/assets/Pe-icon-7-stroke.css">
+    <link href="assets/libs/icon-font-7-stroke/assets/Pe-icon-7-stroke.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/styles/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans|Work+Sans&amp;subset=cyrillic"
-    rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/css/home/main.css">
+    <link href="assets/styles/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nunito+Sans:400,700,800|Work+Sans&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link href="assets/styles/css/contact/main.css" rel="stylesheet">
 
 </head>
 <body class="body">
 <nav class="nav">
     <div class="nav__wrapper">
-        <a href="one-page.html"><img src="assets/img/logo-dark.svg" alt="logo" class="nav__logo"></a>
+        <a href="one-page.html"><img alt="logo" class="nav__logo" src="assets/img/logo-dark.svg"></a>
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="">Home</a></li>
-            <li class="nav__list-item"><a href="">About</a></li>
-            <li class="nav__list-item nav__list-item_active"><a href="">Contact</a></li>
+            <li class="nav__list-item"><a href="home.html">Home</a></li>
+            <li class="nav__list-item"><a href="about.html">About</a></li>
+            <li class="nav__list-item nav__list-item_active">Contact</li>
         </ul>
     </div>
 </nav>
 
-<!--Рамки четкие, можно w100% и со всех сторон padding по 7.3% сделать-->
-<!--И надо rem использовать, а то при изменении лишние движения получаются-->
-<!--По умолчанию в браузерах вроде 16px, а там посмотрим.
-15px - .9375rem, 30px - 1.875, 12 - 0.6667. Других нет.-->
-<!-- И зачем мне писать mixin, если и так я буду использовать одни и те же значения? И их всего 3. Не, не сейчас.-->
-<!--// да, а отступы в тексте лучше rem делать, это логичнее, и относительность сохраняется.-->
-<!--// rem is root em. root em is html's font-size, usually 16px.-->
-<!--// хотя тогда надо переопределить размер шрифта в html...-->
-<!--// Ладно, поставлю fz в html 16. Если сломается что-то - переделаю.-->
-
 <main>
-    <div class="send-form">
+    <div class="section-contact">
+        <div class="contact-container">
+            <div class="contact-text-container">
+                <div class="title">Contact Info:</div>
+                <div class="text">To give give beginning divide, cattle. Give moving
+                    won't, there the abundantly she'd she'd brought air
+                    upon. Light hath subdue. Life days creature upon
+                    first heaven gathering dry.
+                </div>
+                <div class="info">
+                    <div class="contacts-item"><strong class="accent">Address:</strong> 10111 Santa Monica Boulevard, LA
+                    </div>
+                    <div class="contacts-item"><strong class="accent">Phone:</strong> +44 987 065 908</div>
+                    <div class="contacts-item"><strong class="accent">Email:</strong> info@Example.com</div>
+                    <div class="contacts-item"><strong class="accent">Fax:</strong> +44 987 065 909</div>
+                </div>
+            </div>
+            <form action="" class="form" method="post">
+                <div class="name-and-email">
+                    <input class="name" placeholder="Your Name" type="text">
+                    <input class="email" placeholder="Your Email" type="text"/>
+                </div>
 
-    </div>
-    <div class="map">
+                <input class="title" placeholder="Your Title" type="text"/>
+                <textarea class="comment" placeholder="Your Comment"></textarea>
+
+                <button class="button-send" type="submit">send message</button>
+            </form>
+        </div>
+        <div class="map">
+            <iframe frameborder="0" height="600"
+                    marginheight="0"
+                    marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Alley%20Pond%20Park%2C%20park%2C%20New%20York%20City%2C%20United%20States%20of%20America+(Piroll)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" width="100%"><a
+                    href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe>
+        </div>
+        <br/>
 
     </div>
 </main>

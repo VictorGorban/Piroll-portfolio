@@ -39,7 +39,7 @@ gulp.task('sync', function(){
     // init нужен, чтобы обновление работало. Без интерпретатор не видит, к какому объекту применять функцию.
     browserSync.init({ 
         server: ".",
-        index: "contact.html"
+        index: "about.html"
     });
     gulp.watch(pathToCssFiles, browserSync.reload);
     gulp.watch("./*.html", browserSync.reload);

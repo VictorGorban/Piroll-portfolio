@@ -9,11 +9,13 @@
   width: 100%;
   background-image: url(../../../img/header-about-me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 313px;
+
 
   .wrapper {
     text-align: center;
@@ -109,8 +111,10 @@
     justify-content: center;
     align-items: center;
 
+    transition: background-color 0.3s linear;
+
     &:hover {
-      background-color: rgba(16, 201, 195, 0.85);
+      background-color: rgba(16, 201, 195, 0.5);
 
       &::before { // по центру текст
         font-family: 'Pe-icon-7-stroke';

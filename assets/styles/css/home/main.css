@@ -134,7 +134,10 @@
             .footer .container .links .footer-nav__list {
               font-size: 1.2rem; } }
           .footer .container .links .footer-nav__list-item {
-            display: block; }
+            display: block;
+            transition: color 0.2s ease-out; }
+            .footer .container .links .footer-nav__list-item:hover {
+              color: ghostwhite; }
       .footer .container .links .social-links {
         margin: 0;
         padding: 0;
@@ -152,7 +155,10 @@
           .footer .container .links .social-links {
             font-size: 1.2rem; } }
         .footer .container .links .social-links-item {
-          display: block; }
+          display: block;
+          transition: color 0.2s ease-out; }
+          .footer .container .links .social-links-item:hover {
+            color: ghostwhite; }
 
 .nav {
   background-color: #fff;
@@ -200,7 +206,8 @@
           font-size: 1.2em;
           flex-flow: column nowrap; } }
       .nav .nav__wrapper .nav__list-item {
-        display: block; }
+        display: block;
+        transition: color 0.2s ease-out; }
         @media (max-width: 768px) {
           .nav .nav__wrapper .nav__list-item {
             padding-top: 10px; } }
@@ -346,7 +353,10 @@
             .footer .container .links .footer-nav__list {
               font-size: 1.2rem; } }
           .footer .container .links .footer-nav__list-item {
-            display: block; }
+            display: block;
+            transition: color 0.2s ease-out; }
+            .footer .container .links .footer-nav__list-item:hover {
+              color: ghostwhite; }
       .footer .container .links .social-links {
         margin: 0;
         padding: 0;
@@ -364,7 +374,10 @@
           .footer .container .links .social-links {
             font-size: 1.2rem; } }
         .footer .container .links .social-links-item {
-          display: block; }
+          display: block;
+          transition: color 0.2s ease-out; }
+          .footer .container .links .social-links-item:hover {
+            color: ghostwhite; }
 
 .nav {
   background-color: #fff;
@@ -412,7 +425,8 @@
           font-size: 1.2em;
           flex-flow: column nowrap; } }
       .nav .nav__wrapper .nav__list-item {
-        display: block; }
+        display: block;
+        transition: color 0.2s ease-out; }
         @media (max-width: 768px) {
           .nav .nav__wrapper .nav__list-item {
             padding-top: 10px; } }
@@ -438,6 +452,7 @@ a {
   width: 100%;
   background-image: url(../../../img/header-about-me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
   display: flex;
   justify-content: center;
@@ -505,9 +520,10 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: background-color 0.3s linear; }
     .image-grid .link-hover:hover {
-      background-color: rgba(16, 201, 195, 0.85); }
+      background-color: rgba(16, 201, 195, 0.5); }
       .image-grid .link-hover:hover::before {
         font-family: 'Pe-icon-7-stroke';
         color: #ffffff;
